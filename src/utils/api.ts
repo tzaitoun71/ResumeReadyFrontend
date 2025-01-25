@@ -15,6 +15,7 @@ export const useApi = () => {
       return response.json();
     } catch (error) {
       console.error("Error fetching data:", error);
+      return null;
     }
   };
 
