@@ -18,8 +18,6 @@ const UserProfile = () => {
           },
         });
 
-        console.log("Access Token:", token); // Debugging to check if token is retrieved
-
         // Send token to the backend for validation
         const response = await fetch("http://localhost:5000/auth/validate-user", {
           method: "POST",
