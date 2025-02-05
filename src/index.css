@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@import "@fontsource/inter/index.css";
+
+/* Default styles */
+body {
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Light mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #111; /* Match dark theme */
+  color: white;
+}

@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css'
 import LoginButton from "./components/LoginButton";
 import LogoutButton from "./components/LogoutButton";
 import Navbar from './components/Navbar';
@@ -7,11 +8,13 @@ import UserProfile from "./components/UserProfile";
 function App() {
   return (
     <div>
-      <h1>ResumeReady</h1>
       <Navbar />
-      <LoginButton />
-      <LogoutButton />
-      <UserProfile />
+      <div className="pt-20"> {/* This pushes everything below the fixed navbar */}
+        <h1>ResumeReady</h1>
+        <LoginButton />
+        <LogoutButton />
+        <UserProfile />
+      </div>
     </div>
   );
 }
